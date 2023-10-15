@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+body{
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .btn-default{
+        width: -moz-fit-content;
+        width: fit-content;
+        position: relative;
+        padding: 12px 36px;
+        border-radius: 50px 0 50px 0;
+        background: lightcoral;
+        font-family: 'Roboto', sans-serif;
+        color: bisque;
+        font-size: 18px;
+        line-height: 18px;
+        text-transform: capitalize;
+        font-weight: 700;
+        z-index: 10;
+        transition: all .4s ease;
+        cursor: pointer;
+        text-decoration: none;
+    
+        i{
+            margin-left: 10px;
+        }
+    
+        &::after{
+            content: '';
+            width: 40px;
+            height: 40px;
+            background: bisque;
+            left: 0;
+            top: 0;
+            position: absolute;
+            transition: all .4s ease;
+            -webkit-mask: radial-gradient(48px at 105% 105%,#0000 98%, #000);
+                    mask: radial-gradient(48px at 105% 105%,#0000 98%, #000);
+        }
+    
+        &::before{
+            content: '';
+            width: 40px;
+            height: 40px;
+            background: bisque;
+            right: 0;
+            bottom: 0;
+            position: absolute;
+            transition: all .4s ease;
+            -webkit-mask: radial-gradient(48px at -5% -5%,#0000 98%, #000);
+                    mask: radial-gradient(48px at -5% -5%,#0000 98%, #000);
+        }
+        
+        &:hover{
+            background: bisque;
+            color: lightcoral;
+    
+            &::after, &::before{
+                background: lightcoral;
+            }
+        }
+    }
+}

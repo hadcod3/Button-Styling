@@ -1,0 +1,32 @@
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #000;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    .btn-default{
+        position: relative;
+        border-radius: 10px;
+        display: inline-block;
+        color: #d85509;
+        padding: 15px 30px;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+        text-decoration: none;
+        font-size: 24px;
+        overflow: hidden;
+        transition: hidden;
+        transition: 0.2s;
+
+        &:hover{
+            border-radius: 10px;
+            color: #d85509;
+            background: #ffe600;
+            box-shadow: 0 0 10px #ffe600, 0 0 40px #ffe600, 0 0 80px #ffe600 ;
+        }
+    }
+}

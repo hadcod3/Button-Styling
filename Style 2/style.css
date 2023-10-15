@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+body {
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .btn-default {
+  width: -moz-fit-content;
+  width: fit-content;
+  position: relative;
+  padding: 12px 36px;
+  border-radius: 50px 0 50px 0;
+  background: lightcoral;
+  font-family: "Roboto", sans-serif;
+  color: bisque;
+  font-size: 18px;
+  line-height: 18px;
+  text-transform: capitalize;
+  font-weight: 700;
+  z-index: 10;
+  transition: all 0.4s ease;
+  cursor: pointer;
+  text-decoration: none;
+}
+body .btn-default i {
+  margin-left: 10px;
+}
+body .btn-default::after {
+  content: "";
+  width: 40px;
+  height: 40px;
+  background: bisque;
+  left: 0;
+  top: 0;
+  position: absolute;
+  transition: all 0.4s ease;
+  -webkit-mask: radial-gradient(48px at 105% 105%, rgba(0, 0, 0, 0) 98%, #000);
+  mask: radial-gradient(48px at 105% 105%, rgba(0, 0, 0, 0) 98%, #000);
+}
+body .btn-default::before {
+  content: "";
+  width: 40px;
+  height: 40px;
+  background: bisque;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  transition: all 0.4s ease;
+  -webkit-mask: radial-gradient(48px at -5% -5%, rgba(0, 0, 0, 0) 98%, #000);
+  mask: radial-gradient(48px at -5% -5%, rgba(0, 0, 0, 0) 98%, #000);
+}
+body .btn-default:hover {
+  background: bisque;
+  color: lightcoral;
+}
+body .btn-default:hover::after, body .btn-default:hover::before {
+  background: lightcoral;
+}/*# sourceMappingURL=style.css.map */
